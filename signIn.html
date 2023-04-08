@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHEEM COOLING - SIGN IN</title>
+    <link rel="icon" type="image/x-icon" href="img/RC-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <style>
+.wrapper{
+    background: #ececec;
+    padding: 0 20px 0 20px;
+}
+.side-image{
+    background-image: url("img/hinh4.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+    z-index: 5;
+}
+.sign-bar{
+    size: 100%;
+    position: absolute;
+    margin-top: 20px;
+}
+.right{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+}
+.input-box header {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+.input-field .input:focus, .input-field .input:valid ~ label{
+    border-bottom: 1px solid #743ae1;
+}
+.submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #185adf;
+    color: #fff;
+    border-radius: 5px;
+    transition: .4s;
+}
+.submit:hover{
+    background: rgba(37,95,156,0.9);
+    color: #fff;
+}
+.signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+
+
+}
+.span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+.span a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+    }
+    /* img{
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
+    } */
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+
+    }
+    .text p,i{
+        font-size: 17px;
+
+    }
+    .row{
+        max-width: 420px;
+        width: 100%;
+    }
+}
+.fa-brands{
+    background: white;
+    color: rgb(33, 33, 230);
+    font-size: 50px;
+    
+
+   /* position: absolute; */
+}
+.fab{
+    font-size: 50px;
+    color: brown;
+    font-size: 50px;
+    
+}
+.style{
+    border: none;
+    margin-left: 19%;
+    margin-top: 20px;
+    background: white;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+.search{
+  width: auto;
+}
+    </style>
+
+
+</head>
+<body>
+    <!-- <div class="container"> -->
+
+<header>
+    <div class="row">
+      <div class="col-sm-10">
+        <img class="header-logo" src="img/RC_logo_-_official-removebg-preview.png" alt="" width="150px" height="150px">
+        <div style="font-family: 'Times New Roman', Times, serif; font-weight: bold; border: solid; display: inline; border-radius: 5px;">Website visit:
+            <i class="website-counter" style="font-weight: bold; font-family: 'Times New Roman', Times, serif;"></i></div>
+        <div class="name-logo">Rheem Cooling</div>
+      </div>
+      <div class="col-sm-2"><br>
+        <img src="img/phone-solid.svg" width="15px"> <b>0123-456-789</b><br>
+        <a href="#">
+          <i class="glyphicon glyphicon-shopping-cart cart-icon" data-toggle="modal" data-target="#cart">
+            <!-- <img class="cart-icon" src="/icon/cart-shopping-solid.svg" width="30px">   -->
+            <b><span class="total-count badge cart-badge"></span></b>
+          </i></a>
+        
+      </div>
+    </div>
+    <div class="container mt-3" style="width: 100%; padding: 0px;">
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-none" >
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">All Products</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="product Category.html">All type AC</a></li>
+                          <li><a class="dropdown-item" href="split sales.html">Split AC</a></li>
+                          <li><a class="dropdown-item" href="window sales.html">Window AC</a></li>
+                          <li><a class="dropdown-item" href="cassette sales.html">Cassette AC</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="signIn.html">Sign In</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2 search" type="text" placeholder="Search">
+                  <button class="btn btn-primary" type="button">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+  </div>
+  </header>
+<br>
+  <div class="wrapper">
+    <div class="container main">
+       <div class="row">
+           <div class="col-md-6 side-image">
+                   <div class="text">
+                   </div>
+           </div>
+           <div class="col-md-6 right">
+               <form onsubmit="signin()">
+                <div class="input-box">
+                    <h1>Log In</h1>
+                    <div class="input-field">
+                        <input type="text" class="input" id="username"  required >
+                        <label for="Username">User Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" class="input" id="email" required >
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="input" required id="password"  >
+                        <label for="password">Password</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="check" >
+                        <label for="check">Remember me</label> 
+                    </div> 
+                    <br>
+                    <div class="input-field">
+                        <input type="submit" class="submit" value="Log In">
+                    </div>
+                    <div class="signin">
+                        <span>Create Account <a href="signUp.html">Sign Up here</a></span>
+                    </div>
+                    <button class="style" onclick="fb()" style="background: #ececec;"> 
+                        <div> <i class="fa-brands fa-square-facebook"></i> </div>
+                        <div>Facebook</div>
+                        
+                    </button>
+                    <button class="style" onclick="gg()" style="background: #ececec;">
+                        <div>
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div>Google</div>
+                      </button>
+                </div>
+               </form>
+           </div> 
+       </div>
+    </div>
+</div>
+        
+
+  <br><br>
+
+
+        <footer>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="footer-logo" src="img/RC_logo_-_official-removebg-preview.png" width="200px" height="200px"><br>
+                    <h2><b>RHEEM COOLING</b><br></h2>
+                    <i>Bring fresher air inside your home</i>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h3>North Office</h3>
+                            <img src="img/location-dot-solid.svg" width="14px"> Đại học Thủy Lợi, 175 Trung Liệt, Đống Đa, HN<br>
+                            <img src="img/phone-solid.svg" width="14px"> 0123-456-789<br>
+                            <img src="img/envelope-solid.svg" width="14px"> AptechNorth@gmail.com
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>West Office</h3>
+                            <img src="img/location-dot-solid.svg" width="14px"> 25 Hùng Vương, Phường 10, Tp. Đà Lạt<br>
+                            <img src="img/phone-solid.svg" width="14px"> 0123-456-789<br>
+                            <img src="img/envelope-solid.svg" width="14px"> AptechWest@gmail.com  
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>South Office</h3>
+                            <img src="img/location-dot-solid.svg" width="14px"> 590 Cách Mạng Tháng Tám, phường 11, Quận 3, Tp. HCM<br>
+                            <img src="img/phone-solid.svg" width="14px"> 0123-456-789<br>
+                            <img src="img/envelope-solid.svg" width="14px"> AptechSouth@gmail.com
+                        </div>
+                    </div>
+                    <div class="locate">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3253162668498!2d106.66410831458926!3d10.786376992314777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIMSQLiBDw6FjaCBN4bqhbmcgVGjDoW5nIDgsIFBoxrDhu51uZyAxMSwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1678975483602!5m2!1svi!2s" width="90%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+          </footer>
+<!-- </div> -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/product.js"></script>
+<script>
+  getUrlID();
+  productDetail();
+</script>
+<script>
+    var counterContainer = document.querySelector(".website-counter");
+    var resetButton = document.querySelector("#reset");
+    var visitCount = localStorage.getItem("page_view");
+  
+    // Check if page_view entry is present
+    if (visitCount) {
+      visitCount = Number(visitCount) + 1;
+      localStorage.setItem("page_view", visitCount);
+    } else {
+      visitCount = 1;
+      localStorage.setItem("page_view", 1);
+    }
+    counterContainer.innerHTML = visitCount;
+  
+    function updateTicker() {
+    var now = new Date();
+    var date = now.toLocaleDateString();
+    var time = now.toLocaleTimeString();
+    var location = "Unknown";
+    
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            
+            // You can use the lat and lng values to get the location
+            // using a reverse geocoding API
+            location = "Latitude: " + lat + ", Longitude: " + lng;
+            
+            document.getElementById("location").innerHTML = location;
+        });
+    }
+    document.getElementById("date").innerHTML = date;
+    document.getElementById("time").innerHTML = time;
+  }
+  // Update the ticker every second
+  setInterval(updateTicker, 1000);
+  </script>
+<script src="js/cart.js"></script>
+<script src="js/signin.js"></script>
+
+</body>
+</html>

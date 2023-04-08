@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHEEM COOLING - CHECK OUT</title>
+    <link rel="icon" type="image/x-icon" href="img/RC-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+      body {
+        font-family: Arial;
+        font-size: 17px;
+        padding: 8px;
+      }
+      
+      * {
+        box-sizing: border-box; /*border-box tính toán kích thước của phần tử bằng tổng kích thước của nội dung, đường viền và padding.*/
+      }
+      
+      .row {
+        display: flex;
+        flex-wrap: wrap; /*Flex-wrap dùng để điều chỉnh việc bọc các item nằm trong container. Thuộc tình này giải quyết vấn đề là khi chúng ta tăng chiều rộng của trình duyệt thì có thể một số item sẽ bị nhảy khỏi hàng.*/
+        margin: 0 -16px;
+      }
+      
+      .col-25 {
+        flex: 25%;
+      }
+      
+      .col-50 {
+        flex: 50%;
+      }
+      
+      .col-75 {
+        flex: 75%;
+      }
+      
+      .col-25,
+      .col-50,
+      .col-75 {
+        padding: 0 16px;
+      }
+      
+      .containercheck {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+      }
+      
+      input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+      
+      .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+      
+      .checkout {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+      }
+      
+      .checkout:hover {
+        background-color: #a0456b;
+      }
+      
+      a {
+        color: #2196F3;
+      }
+      
+      hr {
+        border: 1px solid lightgrey;
+      }
+      
+      span.price {
+        float: right;
+        color: grey;
+      }
+      
+      .order{
+         font-size: 30px;
+      }
+      /* Bố cục đáp ứng - khi màn hình rộng dưới 800px, đặt hai cột xếp chồng lên nhau thay vì đặt cạnh nhau (đồng thời thay đổi hướng - đặt cột "giỏ hàng" ở trên cùng) */
+      @media (max-width: 800px) {
+        .row {
+          flex-direction: column-reverse;
+        }
+        .col-25 {
+          margin-bottom: 20px;
+        }
+      }
+      </style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <div class="col-sm-10">
+      <img class="header-logo" src="img/RC_logo_-_official-removebg-preview.png" alt="" width="150px" height="150px">
+      <div style="font-family: 'Times New Roman', Times, serif; font-weight: bold; border: solid; display: inline; border-radius: 5px;">Website visit:
+        <i class="website-counter" style="font-weight: bold; font-family: 'Times New Roman', Times, serif;"></i></div>
+      <div class="name-logo">Rheem Cooling</div>
+    </div>
+    <div class="col-sm-2"><br>
+      <img src="img/phone-solid.svg" width="15px"> <b>0123-456-789</b><br>
+      
+    </div>
+  </div>
+  <div class="container mt-3" style="width: 100%; padding: 0px;">
+
+      <nav class="navbar navbar-expand-sm navbar-light bg-none" >
+          <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">All Products</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="product Category.html">All type AC</a></li>
+                    <li><a class="dropdown-item" href="split sales.html">Split AC</a></li>
+                    <li><a class="dropdown-item" href="window sales.html">Window AC</a></li>
+                    <li><a class="dropdown-item" href="cassette sales.html">Cassette AC</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signIn.html">Sign In</a>
+                </li>
+              </ul>
+              <form class="d-flex" id="formSearch">
+                <input class="form-control me-2" type="text" placeholder="Search" id="search" name="search" style="height: 40px;">
+                <button class="btn btn-primary" type="submit" style="height: 40px;">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+</div>
+</header>
+
+
+<h2>Billing Info</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="containercheck">
+      <form onsubmit="clearCart()">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nguyen Thanh Danh">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="danhnguyen@gmail.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="353 Le Hong Phong Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Thu Dau Mot">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Binh Duong">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-paypal" style="color:purple;"></i>
+              <i class="fa fa-cc-jcb" style="color: black;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Nguyen Thanh Danh">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2023">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="checkout" >
+      </form>
+    </div>
+  </div>
+</div>
+  
+        
+
+
+<footer>
+  <div class="row">
+      <div class="col-sm-3">
+          <img class="footer-logo" src="img/RC_logo_-_official-removebg-preview.png" width="200px" height="200px"><br>
+          <h2><b>RHEEM COOLING</b><br></h2>
+          <i>Bring fresher air inside your home</i>
+      </div>
+      <div class="col-sm-9">
+          <div class="row">
+              <div class="col-sm-4">
+                  <h3>North Office</h3>
+                  <img src="img/location-dot-solid.svg" width="14px"> Đại học Thủy Lợi, 175 Trung Liệt, Đống Đa, HN<br>
+                  <img src="img/phone-solid.svg" width="14px"> 0123-456-789<br>
+                  <img src="img/envelope-solid.svg" width="14px"> AptechNorth@gmail.com
+              </div>
+              <div class="col-sm-4">
+                  <h3>West Office</h3>
+                  <img src="img/location-dot-solid.svg" width="14px"> 25 Hùng Vương, Phường 10, Tp. Đà Lạt<br>
+                  <img src="img/phone-solid.svg" width="14px"> 0123-456-789<br>
+                  <img src="img/envelope-solid.svg" width="14px"> AptechWest@gmail.com  
+              </div>
+              <div class="col-sm-4">
+                  <h3>South Office</h3>
+                  <img src="img/location-dot-solid.svg" width="14px"> 590 Cách Mạng Tháng Tám, phường 11, Quận 3, Tp. HCM<br>
+                  <img src="img/phone-solid.svg" width="14px"> 0123-456-789<br>
+                  <img src="img/envelope-solid.svg" width="14px"> AptechSouth@gmail.com
+              </div>
+          </div>
+          <div class="locate">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3253162668498!2d106.66410831458926!3d10.786376992314777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIMSQLiBDw6FjaCBN4bqhbmcgVGjDoW5nIDgsIFBoxrDhu51uZyAxMSwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1678975483602!5m2!1svi!2s" width="90%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- </div> -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script src="js/topsell-products.js"></script>
+<script src="js/new-products.js"></script>
+<script src="js/only-products.js"></script>
+<!-- <script src="/js/checkout.js"></script> -->
+<script src="js/cart.js"></script>
+<script>
+  var counterContainer = document.querySelector(".website-counter");
+  var resetButton = document.querySelector("#reset");
+  var visitCount = localStorage.getItem("page_view");
+
+  // Check if page_view entry is present
+  if (visitCount) {
+    visitCount = Number(visitCount) + 1;
+    localStorage.setItem("page_view", visitCount);
+  } else {
+    visitCount = 1;
+    localStorage.setItem("page_view", 1);
+  }
+  counterContainer.innerHTML = visitCount;
+
+  function updateTicker() {
+  var now = new Date();
+  var date = now.toLocaleDateString();
+  var time = now.toLocaleTimeString();
+  var location = "Unknown";
+  
+  if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+          var lat = position.coords.latitude;
+          var lng = position.coords.longitude;
+          
+          // You can use the lat and lng values to get the location
+          // using a reverse geocoding API
+          location = "Latitude: " + lat + ", Longitude: " + lng;
+          
+          document.getElementById("location").innerHTML = location;
+      });
+  }
+  document.getElementById("date").innerHTML = date;
+  document.getElementById("time").innerHTML = time;
+}
+// Update the ticker every second
+setInterval(updateTicker, 1000);
+</script>
+
+</body>
+</html>
